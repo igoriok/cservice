@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="0d34e9f2-9040-4007-b5db-eb12b9b09e64" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/LayerDesigner">
+  <layers>
+    <layer Id="dab6516d-ac83-4887-9a30-73546cb92fe3" name="Presentation">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="aa817cf2-725f-4be9-98bf-c60ca79b8e25" direction="Forward">
+          <layerMoniker Id="af987a8d-6a4b-404f-9b88-c6fd99f8d9a2" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="412095b5-ed64-438f-9f7a-1d7d3979c563" direction="Forward">
+          <layerMoniker Id="ac03b794-cdc6-4e96-95f2-5f2d05a3547e" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <childLayers>
+        <layer Id="ebbbc8c6-23fa-4b6c-b00f-2ee45734cbe0" name="ASP.NET MVC" />
+        <layer Id="3e0e9b62-579d-45eb-aee9-be84175f7b38" name="WPF" />
+      </childLayers>
+    </layer>
+    <layer Id="ac03b794-cdc6-4e96-95f2-5f2d05a3547e" name="Services">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="811b8960-c308-4058-b122-ffee9322246c" direction="Forward">
+          <layerMoniker Id="af987a8d-6a4b-404f-9b88-c6fd99f8d9a2" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <childLayers>
+        <layer Id="77f9520b-a207-42c5-9137-df9653eda8ed" name="WCF" />
+      </childLayers>
+    </layer>
+    <layer Id="af987a8d-6a4b-404f-9b88-c6fd99f8d9a2" name="Domain">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="ae300ef4-74d5-4c13-ba90-ca0fee708e3f" direction="Forward">
+          <layerMoniker Id="54177e30-566e-4146-b06a-82edf8ae8823" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <childLayers>
+        <layer Id="a22c4322-8bca-4795-bb43-fd20cf44a151" name="Entities" />
+        <layer Id="6bdb4475-6c91-4b38-91db-4fade9d0c9ac" name="Repositories" />
+        <layer Id="a397bb47-2d16-46a4-a868-95401f67ecdf" name="Services" />
+      </childLayers>
+    </layer>
+    <layer Id="54177e30-566e-4146-b06a-82edf8ae8823" name="Infrastructure">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="6861bc57-9fea-4dd0-a88b-8f945e9170f1" direction="Forward">
+          <layerMoniker Id="281cc936-195e-4527-9e30-f7694443eef3" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <childLayers>
+        <layer Id="e07a290a-c7d9-4c31-b7f5-b4c0f204dffb" name="Entity Framework" />
+      </childLayers>
+    </layer>
+    <layer Id="281cc936-195e-4527-9e30-f7694443eef3" name="Database">
+      <childLayers>
+        <layer Id="c610361e-9afc-485a-b2be-b428188c3f41" name="MS SQL" />
+      </childLayers>
+    </layer>
+    <layer Id="12db7307-d60c-4927-8374-f60edbf33ef2" name="Aspects">
+      <childLayers>
+        <layer Id="80122be3-c0d1-4977-a3cb-303c819b3d92" name="Logging" />
+        <layer Id="b872668f-33b2-45ee-997f-9e9b9685a080" name="IoC/DI" />
+        <layer Id="9037686a-1d8e-42a9-bf63-17245abdb8ed" name="Exception Handling" />
+      </childLayers>
+    </layer>
+  </layers>
+</layerModel>
